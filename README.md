@@ -84,10 +84,11 @@ The dataset's scale made memory the central engineering problem; the interesting
 
 ## Getting started
 
-Requires Python ≥ 3.12. TensorFlow is only needed for SLIM/FISM; GPU support is optional but recommended.
+Requires Python ≥ 3.12 and [uv](https://docs.astral.sh/uv/). TensorFlow is only needed for SLIM/FISM; GPU support is optional but recommended.
 
 ```bash
-pip install -r requirements.txt
+uv sync
+source .venv/bin/activate
 ```
 
 ### Dataset
@@ -161,7 +162,7 @@ Search results land in `results/` as CSVs; neighborhoods and matrices are reused
 
 ## Credits
 
-This was a team effort by team **EXP**, built together with [Pablo Fernández (@appuchias)](https://github.com/appuchias) and [Enrique Pardo García (@EnriquePardoGarcia)](https://github.com/EnriquePardoGarcia). My part was the recommendation models and the pipeline: the popularity baseline and evaluator, both KNN recommenders, the two PureSVD variants, the TensorFlow SLIM/FISM training with its memory optimizations, and the end-to-end orchestration. Pablo built the dataset reader and most of the project infrastructure; Enrique contributed the first SLIM prototype and the sweep testing.
+This was a team effort by team **EXP**, built together with [Pablo Fernández (@appuchias)](https://github.com/appuchias) and [Enrique Pardo García (@EnriquePardoGarcia)](https://github.com/EnriquePardoGarcia).
 
 ## References
 
