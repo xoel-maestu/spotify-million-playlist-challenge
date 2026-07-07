@@ -1,0 +1,12 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+.venv/
+
+# Data and generated artifacts (see README for how to get the dataset)
+dataset/
+results/
+*.npz
+*.log

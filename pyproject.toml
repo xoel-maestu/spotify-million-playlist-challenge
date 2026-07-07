@@ -1,0 +1,26 @@
+[project]
+name = "spotify-million-playlist-challenge"
+version = "1.0.0"
+description = "Music playlist continuation for the Spotify Million Playlist Dataset Challenge: KNN, PureSVD, SLIM and FISM from scratch"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Xoel Maestu", email = "xoel.maestu@gmail.com" },
+]
+dependencies = [
+    "numpy>=2.4.2",
+    "scipy>=1.17.1",
+    "tqdm>=4.67.3",
+    "tensorflow>=2.17",
+    "joblib>=1.4",
+]
+
+[tool.black]
+color = true
+safe = true
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+combine_as_imports = true
+combine_straight_imports = true
