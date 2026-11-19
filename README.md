@@ -6,6 +6,10 @@ Automatic playlist continuation with classic collaborative filtering, built from
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.17%2B-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+![R-Precision, NDCG and Clicks for the seven recommenders](docs/figures/results.png)
+
+Official challenge metrics for the seven recommenders. SLIM and FISM (grey) were evaluated on a small trimmed subset, see [Results](#results).
+
 ## Overview
 
 The [Spotify Million Playlist Dataset Challenge](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge) (ACM RecSys Challenge 2018) poses a playlist continuation task: given the first tracks of a playlist, produce a ranked list of 500 recommended tracks. The dataset is the largest public collection of music playlists in the world: 1,000,000 playlists containing 2,262,292 unique tracks by roughly 300,000 artists.
